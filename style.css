@@ -1,0 +1,143 @@
+/* Reset e Estilos Gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f4f8;
+  color: #333333;
+  padding: 30px 15px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #1f497d;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: #2f5597;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 8px;
+}
+
+/* Seção do Gráfico */
+.chart-section {
+  margin-bottom: 40px;
+}
+
+.chart-container {
+  position: relative;
+  height: 320px;
+  width: 100%;
+}
+
+/* Estilização Avançada da Tabela */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+/* Cabeçalho */
+thead th {
+  background-color: #2f5597;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  padding: 12px 10px;
+  border: 1px solid #1f497d;
+}
+
+/* Corpo da Tabela */
+tbody td {
+  padding: 10px;
+  border: 1px solid #d9d9d9;
+}
+
+/* Zebra Striping (Linhas Alternadas) */
+tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tbody tr:hover {
+  background-color: #eef2f7;
+}
+
+/* Destaques e Formatações de Texto */
+.col-ano {
+  font-weight: bold;
+  text-align: center;
+  color: #1f497d;
+}
+
+.col-idade {
+  text-align: center;
+}
+
+.col-moeda {
+  text-align: right;
+}
+
+.col-reserva {
+  font-style: italic;
+  color: #1e4620; /* Verde escuro para aportes */
+  font-weight: 500;
+}
+
+.col-rendimento {
+  font-style: italic;
+  color: #8a6d0b; /* Dourado/Castanho para rendimentos */
+}
+
+.col-valor-final {
+  font-weight: bold;
+  color: #1f497d; /* Azul destaque para saldo final */
+  background-color: rgba(47, 85, 151, 0.05);
+}
+
+/* Rodapé / Totais da Tabela */
+tfoot tr {
+  background-color: #d9e1f2;
+  border-top: 2px solid #1f497d;
+  border-bottom: 3px double #1f497d;
+}
+
+tfoot td {
+  padding: 12px 10px;
+  font-weight: bold;
+  color: #1f497d;
+}
