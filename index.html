@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planejamento Financeiro & Evolução Patrimonial</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- CDN da biblioteca Chart.js para visualização de dados -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📈 Planejamento Financeiro & Evolução Patrimonial</h1>
+      <p>Simulação de crescimento de patrimônio de 2026 a 2036</p>
+    </header>
+
+    <!-- Seção do Gráfico -->
+    <section class="chart-section">
+      <h2>Evolução do Valor Final (R$)</h2>
+      <div class="chart-container">
+        <canvas id="chartPatrimonio"></canvas>
+      </div>
+    </section>
+
+    <!-- Seção da Tabela com Formatação e Destaques -->
+    <section class="table-section">
+      <h2>Tabela Detalhada</h2>
+      <div class="table-wrapper">
+        <table id="tabelaFinanceira">
+          <thead>
+            <tr>
+              <th>Ano</th>
+              <th>Idade</th>
+              <th>Salário</th>
+              <th>Reserva Anual</th>
+              <th>Valor Inicial</th>
+              <th>Rendimento</th>
+              <th>Valor Final</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Preenchido dinamicamente via JS -->
+          </tbody>
+          <tfoot>
+            <tr id="linhaTotal">
+              <!-- Totais/Resumo preenchidos via JS -->
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
